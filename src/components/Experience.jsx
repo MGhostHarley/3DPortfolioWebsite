@@ -16,7 +16,7 @@ const ExperienceCard = ({ experience }) => (
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
     icon={
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="flex justify-center items-center w-full h-full ">
         <img
           src={experience.icon}
           alt={experience.company_name}
@@ -26,7 +26,9 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white tdt-[24px] font-bold">{experience.title}</h3>
+      <h3 className="text-white tdt-[24px] rounded-2xl font-bold">
+        {experience.title}
+      </h3>
       <p
         className="text-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
@@ -51,8 +53,9 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>Work Experience</h2>
+
         <p className={styles.sectionSubText}>What I've done</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
@@ -65,4 +68,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, 'work')
+export default SectionWrapper(Experience, 'experience')

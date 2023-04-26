@@ -27,6 +27,16 @@ import {
   expel,
   kpmg,
   symantec,
+  django,
+  elasticSearch,
+  flask,
+  gcp,
+  golang,
+  python,
+  postgres,
+  mSpaceTheme,
+  mLondon,
+  mPride,
 } from '../assets'
 
 export const navLinks = [
@@ -35,8 +45,16 @@ export const navLinks = [
     title: 'About',
   },
   {
-    id: 'work',
-    title: 'Work',
+    id: 'experience',
+    title: 'Experience',
+  },
+  {
+    id: 'tech',
+    title: 'Tech',
+  },
+  {
+    id: 'projects',
+    title: 'Projects',
   },
   {
     id: 'contact',
@@ -65,12 +83,12 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'Python',
+    icon: python,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'Golang',
+    icon: golang,
   },
   {
     name: 'JavaScript',
@@ -81,37 +99,40 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'MongoDB',
-    icon: mongodb,
+    name: 'Flask',
+    icon: flask,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Django',
+    icon: django,
   },
+  {
+    name: 'React JS',
+    icon: reactjs,
+  },
+  {
+    name: 'Elastic Search',
+    icon: elasticSearch,
+  },
+  {
+    name: 'Postgres',
+    icon: postgres,
+  },
+
+  {
+    name: 'GCP',
+    icon: gcp,
+  },
+
   {
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
+
   {
     name: 'docker',
     icon: docker,
@@ -195,28 +216,33 @@ const testimonials = [
     image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ]
-
+const personalPhotos = [
+  { name: 'Space M', icon: mSpaceTheme },
+  { name: 'M London', icon: mLondon },
+  { name: 'M Pride', icon: mPride },
+]
 const projects = [
   {
     name: 'Car Rent',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing an efficient solution for transportation needs.',
     tags: [
       {
-        name: 'react',
+        name: 'python',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'react',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'flask',
         color: 'pink-text-gradient',
       },
     ],
     image: carrent,
     source_code_link: 'https://github.com/',
+    live_project_url: 'https://google.com/',
   },
   {
     name: 'Job IT',
@@ -228,16 +254,17 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'node.js',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'mysql',
         color: 'pink-text-gradient',
       },
     ],
     image: jobit,
     source_code_link: 'https://github.com/',
+    live_project_url: 'https://bing.com/',
   },
   {
     name: 'Trip Guide',
@@ -245,7 +272,7 @@ const projects = [
       'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
@@ -253,13 +280,21 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'golang',
         color: 'pink-text-gradient',
       },
     ],
     image: tripguide,
     source_code_link: 'https://github.com/',
+    live_project_url: 'https://twitter.com/',
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  personalPhotos,
+}

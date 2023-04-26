@@ -1,5 +1,5 @@
 import logo from './logo.svg'
-import logoColor from './logoColor.svg'
+import logoColor from './logoColor.png'
 import backend from './backend.png'
 import creator from './creator.png'
 import mobile from './mobile.png'
@@ -21,6 +21,13 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
+import django from './tech/django.png'
+import elasticSearch from './tech/elasticsearch.png'
+import flask from './tech/flask.png'
+import gcp from './tech/gcp.png'
+import golang from './tech/golang.png'
+import python from './tech/python.png'
+import postgres from './tech/postgres.png'
 
 import meta from './company/meta.png'
 import shopify from './company/shopify.png'
@@ -34,6 +41,10 @@ import symantec from './company/symantec.png'
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
+
+import mSpaceTheme from './m_spaceTheme.jpeg'
+import mLondon from './m_London.jpeg'
+import mPride from './m_Pride.jpeg'
 
 export {
   logo,
@@ -69,4 +80,14 @@ export {
   expel,
   kpmg,
   symantec,
+  django,
+  elasticSearch,
+  flask,
+  gcp,
+  golang,
+  python,
+  postgres,
+  mSpaceTheme,
+  mLondon,
+  mPride,
 }
