@@ -27,9 +27,11 @@ const Navbar = () => {
             alt="logoColor"
             className="w-9 h-9 object-contain"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-white text-[20px] font-bold cursor-pointer flex font-playfair">
             Em &nbsp;
-            <span className="sm:block hidden">| &nbsp;Harley</span>
+            <span className="sm:block hidden font-playfair">
+              | &nbsp;Harley
+            </span>
           </p>
         </Link>
         <ul className="list none hidden sm:flex flex-row gap-10">
@@ -37,8 +39,8 @@ const Navbar = () => {
             <li
               key={Link.id}
               className={`${
-                active === Link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === Link.title ? 'text-white' : 'text-secondary '
+              } hover:text-white text-[18px] font-playfair font-medium cursor-pointer`}
               onClick={() => {
                 setActive(Link.title)
               }}
@@ -75,8 +77,10 @@ const Navbar = () => {
                 <li
                   key={Link.id}
                   className={`${
-                    active === Link.title ? 'text-white' : 'text-secondary'
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    active === Link.title
+                      ? 'text-white font-playfair'
+                      : 'text-secondary'
+                  } font-medium cursor-pointer text-[16px] font-playfair`}
                   onClick={() => {
                     setToggle(!toggle)
                     setActive(Link.title)

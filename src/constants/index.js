@@ -50,7 +50,7 @@ export const navLinks = [
   },
   {
     id: 'tech',
-    title: 'Tech',
+    title: 'Skills',
   },
   {
     id: 'projects',
@@ -217,9 +217,9 @@ const testimonials = [
   },
 ]
 const personalPhotos = [
-  { name: 'Space M', icon: mSpaceTheme },
+  // { name: 'Space M', icon: mSpaceTheme },
   { name: 'M London', icon: mLondon },
-  { name: 'M Pride', icon: mPride },
+  // { name: 'M Pride', icon: mPride },
 ]
 const projects = [
   {
@@ -241,7 +241,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/MGhostHarley',
     live_project_url: 'https://google.com/',
   },
   {

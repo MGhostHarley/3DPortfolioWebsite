@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-white text-[20px] font-bold text-center font-playfair">
             {title}
           </h3>
         </div>
@@ -34,7 +34,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[20px] max-w-6xl leading-[35px]"
+        className="mt-4 text-secondary text-[24px] max-w-6xl leading-[35px] font-playfair"
       >
         I am a Software Engineer that specializes in designing solutions for
         interesting, complex problems. I have used Python, JavaScript, and
