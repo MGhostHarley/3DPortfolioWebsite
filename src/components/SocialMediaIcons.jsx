@@ -10,7 +10,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-fit h-[34px] w-8"
           alt="linkedin-link"
-          src="./src/assets/linkedin.webp"
+          src="/src/assets/linkedin.webp"
         />
       </a>
       <a
@@ -22,7 +22,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-scale-down h-10 w-10"
           alt="twitter-link"
-          src="./src/assets/twitter.png"
+          src="/src/assets/twitter.png"
         />
       </a>
       <a
@@ -34,7 +34,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-scale-down h-10 w-10"
           alt="github-link"
-          src="./src/assets/github2.png"
+          src="/src/assets/github2.png"
         />
       </a>
     </div>

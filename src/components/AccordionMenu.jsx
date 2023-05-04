@@ -120,27 +120,27 @@ const AccordionMenu = () => {
   return (
     <Accordion>
       <Accordion.Panel>
-        <Accordion.Title className="text-dark-blue text-[20px]">
-          {faqs[0].title}
+        <Accordion.Title>
+          <span className="text-dark-blue text-[20px]"> {faqs[0].title} </span>
         </Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-white text-[18px]">{faqs[0].answer}</p>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel>
-        <Accordion.Title className="text-dark-blue text-[20px]">
-          {faqs[1].title}
+        <Accordion.Title>
+          <span className="text-dark-blue text-[20px]">{faqs[1].title}</span>
         </Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-white text-[18px]">{faqs[1].answer}</p>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel>
-        <Accordion.Title className="text-dark-blue text-[20px]">
-          {faqs[2].title}
+        <Accordion.Title>
+          <span className="text-dark-blue text-[20px]">{faqs[2].title}</span>
         </Accordion.Title>
         <Accordion.Content>
-          <p className="mb-2 text-white text-[18px]">{faqs[2].answer}</p>
+          <p className="mb-2 text-white text-[18px]"> {faqs[2].answer}</p>
           <ul className="list-disc pl-5 text-white text-[18px]">
             {faqs[2].list.map((language, index) => (
               <li key={index}>{language}</li>
@@ -149,16 +149,16 @@ const AccordionMenu = () => {
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel>
-        <Accordion.Title className="text-dark-blue text-[20px]">
-          {faqs[3].title}
+        <Accordion.Title>
+          <span className="text-dark-blue text-[20px]"> {faqs[3].title}</span>
         </Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-white text-[18px]">{faqs[3].answer}</p>
         </Accordion.Content>
       </Accordion.Panel>
       <Accordion.Panel>
-        <Accordion.Title className="text-dark-blue text-[20px]">
-          {faqs[4].title}
+        <Accordion.Title>
+          <span className="text-dark-blue text-[20px]">{faqs[4].title}</span>
         </Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-white text-[18px]">{faqs[4].answer}</p>
