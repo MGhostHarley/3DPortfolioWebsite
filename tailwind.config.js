@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx}',
@@ -42,7 +43,7 @@ module.exports = {
         opensans: ['Open Sans', 'sans-serif'],
       },
       content: {
-        brush: "url('./src/assets/brush.png')",
+        brush: "url('./brush.png')",
       },
       screens: {
         xs: '480px',

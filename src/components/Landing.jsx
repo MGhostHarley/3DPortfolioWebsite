@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
+import { mLondon } from '../assets'
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery('(min-width: 1060px)')
@@ -22,14 +23,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px] rounded-2xl border-2 border-[#24CBFF]"
-              src="/src/assets/m_london.jpeg"
+              src={mLondon}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="/src/assets/m_london.jpeg"
+            src={mLondon}
           />
         )}
       </div>
@@ -50,10 +51,10 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Michael {''}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+              className={`xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush 
+              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]`}
             >
-              &nbsp;Harley
+              &nbsp;Harley{' '}
             </span>
           </p>
 

@@ -46,6 +46,14 @@ import mSpaceTheme from './m_spaceTheme.jpeg'
 import mLondon from './m_London.jpeg'
 import mPride from './m_Pride.jpeg'
 
+import twitterIcon from './twitter.png'
+import linkedinIcon from './linkedin.webp'
+import githubColor from './github2.png'
+// import brushIcon from './brush.png'
+
+// brush: `url(${brushIcon})`,
+// import { brushIcon } from '/src/assets'
+
 export {
   logo,
   logoColor,
@@ -90,4 +98,8 @@ export {
   mSpaceTheme,
   mLondon,
   mPride,
+  twitterIcon,
+  linkedinIcon,
+  githubColor,
+  // brushIcon,
 }

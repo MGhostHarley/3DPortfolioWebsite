@@ -1,3 +1,4 @@
+import { twitterIcon, linkedinIcon, githubColor } from '../assets'
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -10,7 +11,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-fit h-[34px] w-8"
           alt="linkedin-link"
-          src="/src/assets/linkedin.webp"
+          src={linkedinIcon}
         />
       </a>
       <a
@@ -22,7 +23,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-scale-down h-10 w-10"
           alt="twitter-link"
-          src="/src/assets/twitter.png"
+          src={twitterIcon}
         />
       </a>
       <a
@@ -34,7 +35,7 @@ const SocialMediaIcons = () => {
         <img
           className="object-scale-down h-10 w-10"
           alt="github-link"
-          src="/src/assets/github2.png"
+          src={githubColor}
         />
       </a>
     </div>
