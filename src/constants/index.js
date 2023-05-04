@@ -52,10 +52,10 @@ export const navLinks = [
     id: 'tech',
     title: 'Skills',
   },
-  {
-    id: 'projects',
-    title: 'Projects',
-  },
+  // {
+  //   id: 'projects',
+  //   title: 'Projects',
+  // },
   {
     id: 'contact',
     title: 'Contact',
@@ -289,6 +289,33 @@ const projects = [
     live_project_url: 'https://twitter.com/',
   },
 ]
+const faqs = [
+  {
+    title: 'Where are you located?',
+    answer:
+      'I currently live in downtown San Francisco. I am interested in remote, hybrid and in person roles.',
+  },
+  {
+    title: 'What kind of role are you interested in?',
+    answer: "I'm open to both Fullstack and Backend Roles",
+  },
+  {
+    title: 'What are your most used programming languages?',
+    answer: 'I primarily write code in',
+    list: ['Python', 'JavaScript', 'Golang'],
+  },
+  {
+    title: 'What new tech are you exceited about?',
+    answer:
+      "I'm really exctied about Next.js and how React is exploring server side rendering. I think it has the potential to add huge benefits for front end development",
+    list: ['Python', 'JavaScript', 'Golang'],
+  },
+
+  {
+    title: "What's you're favorite color?",
+    answer: 'Hopefully from this website, you can guess 😉',
+  },
+]
 
 export {
   services,
@@ -297,4 +324,5 @@ export {
   testimonials,
   projects,
   personalPhotos,
+  faqs,
 }

@@ -8,7 +8,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img
-          class="object-fit h-[34px] w-8"
+          className="object-fit h-[34px] w-8"
           alt="linkedin-link"
           src="./src/assets/linkedin.webp"
         />
@@ -20,7 +20,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img
-          class="object-scale-down h-10 w-10"
+          className="object-scale-down h-10 w-10"
           alt="twitter-link"
           src="./src/assets/twitter.png"
         />
@@ -32,7 +32,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img
-          class="object-scale-down h-10 w-10"
+          className="object-scale-down h-10 w-10"
           alt="github-link"
           src="./src/assets/github2.png"
         />

@@ -5,6 +5,7 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
+import AccordionMenu from './AccordionMenu.jsx'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -26,15 +27,16 @@ const ServiceCard = ({ index, title, icon }) => {
     </Tilt>
   )
 }
+// pt-[400px] pb-[2800px]
 const About = () => {
   return (
-    <>
+    <div className=" md:pt-1">
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-secondary text-[24px] max-w-6xl leading-[35px] font-playfair"
+        className="mt-4 text-white text-[24px] max-w-6xl leading-[35px] font-playfair"
       >
         I am a Software Engineer that specializes in designing solutions for
         interesting, complex problems. I have used Python, JavaScript, and
@@ -45,12 +47,43 @@ const About = () => {
         value in their data. I am a team player and a joy to work with, and I
         know I will excel at my next position.
       </motion.p>
+      <motion.p
+        variants={fadeIn('', '', 0.1, 1)}
+        className="mt-4 text-white text-[24px] max-w-6xl leading-[35px] font-playfair"
+      >
+        In my next position I am looking for three core things:
+        <div className="mt-5">
+          <ul>
+            <li>
+              {' '}
+              <span className="font-bold text-[#FC59FF]">Growth</span>: A place
+              where I can grow my technical and professional capabilities
+            </li>{' '}
+            <li>
+              {' '}
+              <span className="font-bold text-[#FC59FF]">Stability</span>: A
+              place that has a clear vision and a proven track record of success{' '}
+            </li>
+            <li>
+              {' '}
+              <span className="font-bold text-[#FC59FF]"> Collaboration</span>:
+              A place that values teamwork
+            </li>
+          </ul>
+        </div>
+      </motion.p>
+
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+      <div className="mt-20">
+        <h2 className="text-secondary text-[34px]">FAQs about me</h2>
+
+        <AccordionMenu />
+      </div>
+    </div>
   )
 }
 // export default About

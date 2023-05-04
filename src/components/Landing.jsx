@@ -4,37 +4,15 @@ import useMediaQuery from '../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { SectionWrapper } from '../hoc'
-import { Tilt } from 'react-tilt'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const PictureCard = ({ title, icon, index }) => {
-  return (
-    <Tilt className="xs:w-[300px] pr-10">
-      <motion.div
-        variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
-        className=" green-pink-gradient p-4 px-5 rounded-[20px]  shadow-card items-stretch w-[400px] h-[500px]"
-      >
-        <div
-          options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-2 px-2 justify-evenly items-stretch flex flex-col w-full h-full"
-        >
-          <img
-            src={icon}
-            alt={title}
-            className="w-full h-full object-cover rounded-2xl "
-          />
-        </div>
-      </motion.div>
-    </Tilt>
-  )
-}
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery('(min-width: 1060px)')
 
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 h-screen py-10 -mt-28"
+      className=" md:flex md:justify-between md:items-center gap-16 h-screen py-20 -mt-28"
     >
       {/* IMAGE SECTION */}
       <div className=" basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">

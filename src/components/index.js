@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks'
 import Contact from './Contact'
 import DotGroup from './DotGroup'
 import Landing from './Landing'
+import AccordionMenu from './AccordionMenu'
 
 export {
   Hero,
@@ -25,4 +26,5 @@ export {
   StarsCanvas,
   DotGroup,
   Landing,
+  AccordionMenu,
 }

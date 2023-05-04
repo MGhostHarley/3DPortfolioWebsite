@@ -22,7 +22,6 @@ const App = () => {
   const [selectedPage, setSelectedPage] = useState('home')
   const [isTopOfPage, setIsTopOfPage] = useState(true)
   const isDesktop = useMediaQuery('(min-width: 1060px)')
-  console.log('WindowY', window.scrollY)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,12 +56,20 @@ const App = () => {
             </motion.div>
           </div> */}
           {/* <Hero /> */}
-          <Landing />
+          <div className="w-5/6 mx-auto md:pb-1">
+            <motion.div
+              margin="0 0 -200px 0"
+              amount="all"
+              onViewportEnter={() => setSelectedPage('')}
+            >
+              <Landing />
+            </motion.div>
+          </div>
         </div>
         <div>
           <StarsCanvas />
 
-          <div className="w-5/6 mx-auto  ">
+          <div className="w-5/6 mx-auto pt-[200px] md:pt-1">
             <motion.div
               margin="0 0 -200px 0"
               amount="all"
@@ -71,7 +78,7 @@ const App = () => {
               <About />
             </motion.div>
           </div>
-          <div className="w-5/6 mx-auto  ">
+          <div className="w-5/6 mx-auto">
             <motion.div
               margin="0 0 -200px 0"
               amount="all"
@@ -80,36 +87,36 @@ const App = () => {
               <Experience />
             </motion.div>
           </div>
+
           <div className="w-5/6 mx-auto  ">
             <motion.div
               margin="0 0 -200px 0"
               amount="all"
-              onViewportEnter={() => setSelectedPage('experience')}
+              onViewportEnter={() => setSelectedPage('tech')}
             >
               <Tech />
             </motion.div>
           </div>
-          <div className="w-5/6 mx-auto  ">
+          {/* <div className="w-5/6 mx-auto  ">
             <motion.div
               margin="0 0 -200px 0"
               amount="all"
-              onViewportEnter={() => setSelectedPage('experience')}
+              onViewportEnter={() => setSelectedPage('works')}
             >
               <Works />
             </motion.div>
-          </div>
+          </div> */}
           {/* <Feedback /> */}
           <div className="relative z-0">
             <div className="w-5/6 mx-auto  ">
               <motion.div
                 margin="0 0 -200px 0"
                 amount="all"
-                onViewportEnter={() => setSelectedPage('experience')}
+                onViewportEnter={() => setSelectedPage('contact')}
               >
                 <Contact />
               </motion.div>
             </div>{' '}
-            />
           </div>
         </div>
       </div>
