@@ -97,7 +97,7 @@ const App = () => {
               <Tech />
             </motion.div>
           </div>
-          {/* <div className="w-5/6 mx-auto  ">
+          <div className="w-5/6 mx-auto  ">
             <motion.div
               margin="0 0 -200px 0"
               amount="all"
@@ -105,7 +105,7 @@ const App = () => {
             >
               <Works />
             </motion.div>
-          </div> */}
+          </div>
           {/* <Feedback /> */}
           <div className="relative z-0">
             <div className="w-5/6 mx-auto  ">
