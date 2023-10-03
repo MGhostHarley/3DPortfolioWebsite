@@ -37,6 +37,10 @@ import {
   mSpaceTheme,
   mLondon,
   mPride,
+  bikeStarDashboard,
+  donationDashboard,
+  stonksMovie,
+  twentyFour,
 } from '../assets'
 
 export const navLinks = [
@@ -141,6 +145,17 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Software Engineer, Platform',
+    company_name: '24 Hour Fitness',
+    icon: twentyFour,
+    iconBg: '#E6DEDD',
+    date: 'January 2023 - Current',
+    points: [
+      'Worked with stakeholders to implement end-to-end data solutions including data models, data pipelines, business intelligence products like Okta, Stripe',
+      'Used Python, Golang, React, Typescript to build a dashboard tracking club usage and $5 million of membership sales',
+    ],
+  },
+  {
     title: 'Senior Software Engineer',
     company_name: 'Dimension',
     icon: dimension,
@@ -223,9 +238,9 @@ const personalPhotos = [
 ]
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Donation Dashboard',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing an efficient solution for transportation needs.',
+      'As election season gears up, I created a dashboard of donation data for a local candidate to give realtime, actionable insights. With permission from the candidate, I created a mock version for my portfolio with dummy data.',
     tags: [
       {
         name: 'python',
@@ -236,25 +251,25 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'flask',
+        name: 'fastAPI',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
+    image: donationDashboard,
     source_code_link: 'https://github.com/MGhostHarley',
-    live_project_url: 'https://google.com/',
+    live_project_url: 'https://donationdashboard.fun/',
   },
   {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    name: 'MovieBin',
+    description: `My friends wanted a way to watch share, review and search movies with each other. MovieBin was born. It is built with Next.js 13, and uses single sign on for authentication, MongoDB to store information and uses RapidAPI for movie search.
+      `,
     tags: [
       {
-        name: 'react',
+        name: 'Next.js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'node.js',
+        name: 'Tailwind',
         color: 'green-text-gradient',
       },
       {
@@ -262,21 +277,21 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-    live_project_url: 'https://bing.com/',
+    image: stonksMovie,
+    source_code_link: 'https://github.com/MGhostHarley',
+    live_project_url: 'https://stonksmoviesite.vercel.app/',
   },
   {
-    name: 'Trip Guide',
+    name: 'BikeStar',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'BikeStar is a simple dashboard that shows key insights about sales of a fictional bike brand and makes predictions. It is created using Node.js, Golang, MaterialUI and deployed using Vercel and Fly.io',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'material-ui',
         color: 'green-text-gradient',
       },
       {
@@ -284,9 +299,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
-    live_project_url: 'https://twitter.com/',
+    image: bikeStarDashboard,
+    source_code_link: 'https://github.com/MGhostHarley',
+    live_project_url: 'https://bikestar.vercel.app/dashboard',
   },
 ]
 const faqs = [

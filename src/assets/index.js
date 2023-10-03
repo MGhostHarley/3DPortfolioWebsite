@@ -49,6 +49,12 @@ import mPride from './m_Pride.jpeg'
 import twitterIcon from './twitter.png'
 import linkedinIcon from './linkedin.webp'
 import githubColor from './github2.png'
+
+import bikeStarDashboard from './BikeStarDashboard.png'
+import donationDashboard from './DonationDashboard.png'
+import stonksMovie from './StonksMovie.png'
+
+import twentyFour from './24HourFitness.jpg'
 // import brushIcon from './brush.png'
 
 // brush: `url(${brushIcon})`,
@@ -101,5 +107,9 @@ export {
   twitterIcon,
   linkedinIcon,
   githubColor,
+  bikeStarDashboard,
+  donationDashboard,
+  stonksMovie,
+  twentyFour,
   // brushIcon,
 }
