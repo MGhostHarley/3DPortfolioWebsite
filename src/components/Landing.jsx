@@ -60,13 +60,15 @@ const Landing = ({ setSelectedPage }) => {
 
           <p className="mt-10 mb-7 pb-6 text-[20px] text-center md:text-start">
             My name is Michael, but most people call me{' '}
-            <span className="font-bold text-[#FC59FF]">Em</span>. I'm a Software
-            Engineer that builds APIs and I'm a team player that tries to add a
-            little joy to the world. I built this website using{' '}
+            <span className="font-bold text-[#FC59FF]">Em</span>. Welcome to my
+            portfolio website! I'm a Software Engineer that built this website
+            using{' '}
             <span className="font-bold text-[#24CBFF]">
               React.js, TailwindCSS
             </span>{' '}
-            and <span className="font-bold text-[#24CBFF]">Three.js</span>
+            and <span className="font-bold text-[#24CBFF]">Three.js </span>to
+            show off some of my technical chops as well as have a place to host
+            my other projects.
           </p>
         </motion.div>
 

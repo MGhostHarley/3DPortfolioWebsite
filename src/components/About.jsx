@@ -32,7 +32,7 @@ const About = () => {
   return (
     <div className="md:pt-1">
       <motion.div>
-        <h2 className={styles.sectionHeadText}>About Me</h2>
+        <h2 className={`mt-20 ${styles.sectionHeadText}`}>About Me</h2>
       </motion.div>
       <motion.p className="mt-4 text-white text-[24px] max-w-6xl leading-[35px] font-playfair">
         I am a Software Engineer that specializes in designing solutions for
