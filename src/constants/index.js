@@ -41,6 +41,7 @@ import {
   donationDashboard,
   stonksMovie,
   twentyFour,
+  todayMLearned,
 } from '../assets'
 
 export const navLinks = [
@@ -256,7 +257,7 @@ const projects = [
       },
     ],
     image: donationDashboard,
-    source_code_link: 'https://github.com/MGhostHarley',
+    source_code_link: 'https://github.com/MGhostHarley/react_admin_dashboard',
     live_project_url: 'https://donationdashboard.fun/',
   },
   {
@@ -278,7 +279,7 @@ const projects = [
       },
     ],
     image: stonksMovie,
-    source_code_link: 'https://github.com/MGhostHarley',
+    source_code_link: 'https://github.com/MGhostHarley/movieSIte',
     live_project_url: 'https://stonksmoviesite.vercel.app/',
   },
   {
@@ -300,8 +301,30 @@ const projects = [
       },
     ],
     image: bikeStarDashboard,
-    source_code_link: 'https://github.com/MGhostHarley',
+    source_code_link: 'https://github.com/MGhostHarley/financeDashboard',
     live_project_url: 'https://bikestar.vercel.app/dashboard',
+  },
+  {
+    name: 'Today-M-Learned',
+    description:
+      'During the pandemic, my friends would share a fact of the day as a way to keep in touch. I wanted a way where we could all see them easily, and decided that builing a simple React App was the best way to go. I also used it as an excuse to play around with Supabase.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'superbase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vercel',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: todayMLearned,
+    source_code_link: 'https://github.com/MGhostHarley/today-i-learned',
+    live_project_url: 'https://today-m-learned.vercel.app/',
   },
 ]
 const faqs = [

@@ -20,18 +20,14 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
-        options={{ max: 45, scale: 1, speed: 450 }}
+        options={{ max: 0, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div
           className="relative w-full h-[230px] cursor-pointer"
           onClick={() => window.open(live_project_url, '_blank')}
         >
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          <img src={image} alt={name} className="w-full h-full  rounded-2xl" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, '_blank')}

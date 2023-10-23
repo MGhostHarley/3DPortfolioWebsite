@@ -55,6 +55,7 @@ import donationDashboard from './DonationDashboard.png'
 import stonksMovie from './StonksMovie.png'
 
 import twentyFour from './24HourFitness.jpg'
+import todayMLearned from './Today-M-Learned.png'
 // import brushIcon from './brush.png'
 
 // brush: `url(${brushIcon})`,
@@ -111,5 +112,6 @@ export {
   donationDashboard,
   stonksMovie,
   twentyFour,
+  todayMLearned,
   // brushIcon,
 }

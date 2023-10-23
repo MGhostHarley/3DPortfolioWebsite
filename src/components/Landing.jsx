@@ -29,7 +29,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-2xl border-2 border-[#24CBFF]"
             src={mLondon}
           />
         )}

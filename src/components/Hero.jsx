@@ -12,10 +12,10 @@ const PictureCard = ({ title, icon, index }) => {
     <Tilt className="xs:w-[300px] pr-10">
       <motion.div
         variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
-        className=" green-pink-gradient p-4 px-5 rounded-[20px]  shadow-card items-stretch w-[400px] h-[500px]"
+        className=" green-pink-gradient p-4 px-5 rounded-[20px] shadow-card items-stretch w-[400px] h-[500px]"
       >
         <div
-          options={{ max: 45, scale: 1, speed: 450 }}
+          options={{ max: 0, scale: 1, speed: 450 }}
           className="bg-tertiary rounded-[20px] py-2 px-2 justify-evenly items-stretch flex flex-col w-full h-full"
         >
           <img
